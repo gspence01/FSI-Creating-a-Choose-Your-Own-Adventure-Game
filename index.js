@@ -22,5 +22,21 @@ if (firstAnswer === 'left'){
     }
 }else if (firstAnswer === "right"){
     let secondAnswer = window.prompt("You come across a snoring dragon. On the other side of him, you see a shiny chest of treasure. Another path would lead you away from the dragon altogether. WHich path do you take?")
-
+    if (secondAnswer === "past the dragon" || secondAnswer === "go past the dragon" || secondAnswer === "for the treasure" || secondAnswer === "on the other side of him" || secondAnswer === "on the other side of the dragon"){
+        let thirdAnswer = window.prompt("The dragon wakes up and sits upright. You only have a moment to respond, to stay or run.")
+        if (thirdAnswer === "stay"){
+            window.alert("You and the dragon have an uplifting conversation about local politics and become lifelong friends.")
+        }
+        else if (thirdAnswer === "run"){
+            window.alert("Quickly, you run back to the cave's entrance. Sheepish, you return home.")
+        }
+    }
+    else if (secondAnswer === "away from the dragon"){
+        let thirdAnswer = window.prompt("After walking a while longer, you come across a shiny blue flower. It is so beautiful, that you decide you must either draw it or pick it. Which do you do?")
+        if (thirdAnswer === "draw it"){
+            window.alert("You draw the flower, capturing only a fraction of its beauty with your quill. You bring the drawing home, somewhat disappointed, but over time, discover the joy in sharing it with your friends and family, reconting the story of your days as a sorcerer with the aid of the sketch.")
+        }else if (thirdAnswer === "pick it"){
+            window.alert("You pick the flower and bring it home, and all marvel at its brilliance. However, over time it fades and eventually crumbles to dust.")
+        }
+    }
 }
